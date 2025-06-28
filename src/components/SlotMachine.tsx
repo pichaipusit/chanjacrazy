@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import RaceProfilePick from "./RaceProfilePick";
 
 const WORDS = [
   ["คูล", "ซุปเปอร์", "เมก้า", "ไฮเปอร์", "บ้าๆบอๆ"],
@@ -51,11 +52,8 @@ export default function SlotMachine() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
-      <Avatar className="mb-5">
-        <AvatarImage src="https://github.com/shadcn.png" />
-        <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
+    <div className="flex flex-col items-center justify-center  min-h-screen bg-gray-900 text-white p-4">
+      <RaceProfilePick />
 
       <div className="mb-8 text-xl ">
         {finalUsername ? (
