@@ -1,4 +1,3 @@
-import AvatarRace from "@/components/AvatarRace";
 import SlotMachine from "@/components/SlotMachine";
 
 export default function Home() {
